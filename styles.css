@@ -5,32 +5,32 @@
     --bg-tertiary: #1a1a24;
     --bg-card: #161620;
     --bg-card-hover: #1e1e2e;
-    
+
     --text-primary: #f5f5f7;
     --text-secondary: #a8a8b3;
     --text-tertiary: #6e6e7a;
-    
+
     --accent-primary: #00d4ff;
     --accent-secondary: #7c3aed;
     --accent-tertiary: #f59e0b;
-    
+
     --border-color: #2a2a3a;
     --border-hover: #3a3a4a;
-    
+
     --gradient-1: linear-gradient(135deg, #00d4ff 0%, #7c3aed 100%);
     --gradient-2: linear-gradient(135deg, #7c3aed 0%, #f59e0b 100%);
-    
+
     /* Typography */
     --font-display: 'Playfair Display', serif;
     --font-body: 'JetBrains Mono', monospace;
-    
+
     /* Spacing */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
     --spacing-lg: 4rem;
     --spacing-xl: 6rem;
-    
+
     /* Effects */
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
     --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
@@ -98,6 +98,39 @@ body {
 
 .logo-text {
     font-family: var(--font-display);
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1001;
+    position: relative;
+}
+
+.hamburger-line {
+    width: 24px;
+    height: 2px;
+    background: var(--text-primary);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle[aria-expanded="true"] .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.mobile-menu-toggle[aria-expanded="true"] .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-toggle[aria-expanded="true"] .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
 }
 
 .nav-links {
@@ -170,7 +203,7 @@ body {
 .grid-overlay {
     position: absolute;
     inset: 0;
-    background-image: 
+    background-image:
         linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
         linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px);
     background-size: 50px 50px;
@@ -837,50 +870,145 @@ section {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
     .nav-links {
-        gap: var(--spacing-sm);
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: rgba(10, 10, 15, 0.98);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        align-items: stretch;
+        padding: var(--spacing-md);
+        gap: 0;
+        border-bottom: 1px solid var(--border-color);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
     }
-    
+
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
     .nav-link {
-        font-size: 0.85rem;
+        padding: var(--spacing-sm);
+        border-radius: 8px;
+        font-size: 1rem;
+        display: block;
+        text-align: left;
+        transition: all 0.3s ease;
     }
-    
+
+    .nav-link:hover {
+        background: var(--bg-card);
+        padding-left: var(--spacing-md);
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+
+    .cta-nav {
+        margin-top: var(--spacing-xs);
+        text-align: center;
+    }
+
     .hero {
-        padding: calc(var(--spacing-xl) + 60px) var(--spacing-sm) var(--spacing-md);
+        padding: calc(var(--spacing-xl) + 80px) var(--spacing-sm) var(--spacing-md);
+        min-height: auto;
     }
-    
+
+    .hero-title {
+        font-size: clamp(2.5rem, 10vw, 4rem);
+    }
+
+    .hero-description {
+        font-size: 1.1rem;
+    }
+
     .hero-actions {
         flex-direction: column;
+        gap: var(--spacing-sm);
     }
-    
+
     .btn {
         width: 100%;
         justify-content: center;
+        padding: 1rem 1.5rem;
     }
-    
+
     .hero-stats {
-        flex-direction: column;
+        flex-direction: row;
         gap: var(--spacing-md);
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
-    
+
+    .stat-number {
+        font-size: 1.75rem;
+    }
+
+    .stat-label {
+        font-size: 0.85rem;
+    }
+
     .features-grid,
     .pricing-grid,
     .testimonials-grid {
         grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
     }
-    
+
+    .feature-card,
+    .pricing-card,
+    .testimonial-card {
+        padding: var(--spacing-sm);
+    }
+
+    .section-title {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    .section-subtitle {
+        font-size: 1.1rem;
+    }
+
     .footer-content {
         grid-template-columns: 1fr;
         gap: var(--spacing-md);
     }
-    
+
     .download-card {
         flex-direction: column;
         text-align: center;
+        padding: var(--spacing-sm);
     }
-    
+
     .download-info {
         text-align: center;
+    }
+
+    .download-icon {
+        font-size: 2.5rem;
+    }
+
+    .pricing-price {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+
+    .price-amount {
+        font-size: 2.5rem;
     }
 }
 
@@ -888,15 +1016,11 @@ section {
     .nav-container {
         padding: 0 var(--spacing-sm);
     }
-    
-    .nav-links {
-        display: none;
-    }
-    
+
     .container {
         padding: 0 var(--spacing-sm);
     }
-    
+
     section {
         padding: var(--spacing-md) 0;
     }
@@ -911,18 +1035,18 @@ section {
         transform: translateY(30px);
         animation: slideUp 0.6s ease-out forwards;
     }
-    
+
     .feature-card:nth-child(1) { animation-delay: 0.1s; }
     .feature-card:nth-child(2) { animation-delay: 0.2s; }
     .feature-card:nth-child(3) { animation-delay: 0.3s; }
     .feature-card:nth-child(4) { animation-delay: 0.4s; }
     .feature-card:nth-child(5) { animation-delay: 0.5s; }
     .feature-card:nth-child(6) { animation-delay: 0.6s; }
-    
+
     .pricing-card:nth-child(1) { animation-delay: 0.1s; }
     .pricing-card:nth-child(2) { animation-delay: 0.2s; }
     .pricing-card:nth-child(3) { animation-delay: 0.3s; }
-    
+
     @keyframes slideUp {
         to {
             opacity: 1;
