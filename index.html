@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Journal - Professional Trade Analysis for Windows</title>
+    <meta name="description" content="Track, analyze, and optimize your trading performance with our powerful desktop trading journal. Import from Zerodha, analyze patterns, and improve your trading strategy.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.svg" alt="Trading Journal Logo" class="logo-icon">
+                <span class="logo-text">Trading Journal</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#testimonials" class="nav-link">Reviews</a>
+                <a href="#download" class="nav-link cta-nav">Download</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="grid-overlay"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge fade-in">
+                <span class="badge-text">Windows Desktop App</span>
+            </div>
+            <h1 class="hero-title fade-in-delay-1">
+                <span class="title-line">Transform Your</span>
+                <span class="title-line accent">Trading Performance</span>
+            </h1>
+            <p class="hero-description fade-in-delay-2">
+                Professional-grade trading journal with powerful analytics,
+                Zerodha integration, and intelligent trade analysis.
+                Turn your trading data into actionable insights.
+            </p>
+            <div class="hero-actions fade-in-delay-3">
+                <a href="#download" class="btn btn-primary">
+                    <span>Download Free Version</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 3V17M10 17L4 11M10 17L16 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+                <a href="https://youtu.be/0CuHwpOpnO8" target="_blank" class="btn btn-secondary">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M7 5L13 10L7 15V5Z" fill="currentColor"/>
+                    </svg>
+                    <span>Watch Demo</span>
+                </a>
+            </div>
+            <div class="hero-stats fade-in-delay-4">
+                <div class="stat-item">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Pricing Tiers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Offline First</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">Zerodha</div>
+                    <div class="stat-label">Native Integration</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Powerful Features</h2>
+                <p class="section-subtitle">Everything you need to analyze and improve your trading</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📥</div>
+                    <h3 class="feature-title">CSV Import</h3>
+                    <p class="feature-description">Import your trading history from CSV files. Support for multiple formats and automatic data parsing.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">✍️</div>
+                    <h3 class="feature-title">Manual Entry</h3>
+                    <p class="feature-description">Add trades manually with an intuitive interface. Perfect for tracking trades in real-time.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3 class="feature-title">Advanced Analytics</h3>
+                    <p class="feature-description">Comprehensive performance metrics, win rate analysis, profit/loss tracking, and pattern recognition.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔗</div>
+                    <h3 class="feature-title">Zerodha Integration</h3>
+                    <p class="feature-description">Seamless integration with Zerodha. Auto-import trades from current holdings CSV and sync automatically.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">GTT Management</h3>
+                    <p class="feature-description">Track and manage Good Till Triggered (GTT) orders. Never miss a trade opportunity.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3 class="feature-title">Local Storage</h3>
+                    <p class="feature-description">All your data stays on your machine. Complete privacy and security with offline-first architecture.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Choose Your Plan</h2>
+                <p class="section-subtitle">Start free, upgrade as you grow</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Version 1 - Free -->
+                <div class="pricing-card">
+                    <div class="pricing-badge free">Free</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Version 1</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">₹0</span>
+                            <span class="price-period">Forever</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>CSV Import</span>
+                        </li>
+                        <li class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Manual Trade Entry</span>
+                        </li>
+                        <li class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Basic Analytics</span>
+                        </li>
+                        <li class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Performance Reports</span>
+                        </li>
+                        <li class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Local Data Storage</span>
+                        </li>
+                    </ul>
+                    <a href="https://github.com/ashishsingh1331/TradingJournal-releases/releases/download/v0.1.1/Trading.Journal-0.1.1-installer.exe" class="btn btn-outline btn-block">Download Now</a>
+                </div>
+
+                <!-- Version 2 - ₹499 -->
+                <div class="pricing-card featured">
+                    <div class="pricing-badge popular">Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Version 2</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">₹399</span>
+                            <span class="price-period">One-time</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Zerodha Current Holdings CSV Import</span>
+                        </li>
+                        <li class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Reduced Manual Work</span>
+                        </li>
+                        <li class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Advanced Analytics</span>
+                        </li>
+                    </ul>
+                    <!-- Replace YOUR_FORM_ID_HERE with your actual Google Form ID for Version 2 -->
+                    <a href="https://forms.gle/YOUR_FORM_ID_HERE" target="_blank" class="btn btn-primary btn-block">Purchase Version 2</a>
+                </div>
+
+                <!-- Version 3 - ₹699 -->
+                <div class="pricing-card">
+                    <div class="pricing-badge premium">Premium</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Version 3</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">₹599</span>
+                            <span class="price-period">One-time</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Everything in Version 2</span>
+                        </li>
+                        <li class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Zerodha Auto Sync</span>
+                        </li>
+                        <li class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>GTT Missing Feature</span>
+                        </li>
+                        <li class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Real-time Sync</span>
+                        </li>
+                        <li class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Priority Support</span>
+                        </li>
+                    </ul>
+                    <!-- Replace YOUR_FORM_ID_HERE with your actual Google Form ID for Version 3 -->
+                    <a href="https://forms.gle/YOUR_FORM_ID_HERE" target="_blank" class="btn btn-outline btn-block">Purchase Version 3</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Traders Say</h2>
+                <p class="section-subtitle">Real feedback from our community</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- Testimonial cards will be populated from YouTube comments -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"This is exactly what I needed! The CSV import works flawlessly and the analytics are comprehensive."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">T</div>
+                        <div class="author-info">
+                            <div class="author-name">Trader</div>
+                            <div class="author-source">YouTube Comment</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Finally, a trading journal that doesn't require internet. All my data stays local and secure."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <div class="author-name">Active Trader</div>
+                            <div class="author-source">YouTube Comment</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"The manual entry is so intuitive. I can track my trades in real-time without any hassle."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">U</div>
+                        <div class="author-info">
+                            <div class="author-name">User</div>
+                            <div class="author-source">YouTube Comment</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonials-note">
+                <p>💬 <strong>Have feedback?</strong> Leave a comment on our <a href="https://youtu.be/0CuHwpOpnO8" target="_blank">YouTube video</a> and we'll feature it here!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <h2 class="download-title">Ready to Start?</h2>
+                <p class="download-description">Download the free version and start tracking your trades today. No credit card required.</p>
+
+                <div class="download-options">
+                    <a href="https://github.com/ashishsingh1331/TradingJournal-releases/releases/download/v0.1.1/Trading.Journal-0.1.1-installer.exe" class="download-card">
+                        <div class="download-icon">⬇️</div>
+                        <div class="download-info">
+                            <h3 class="download-version">Version 1.0</h3>
+                            <p class="download-details">Free • Windows • Latest Release</p>
+                        </div>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="download-features">
+                    <div class="download-feature">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Works offline - your data stays private</span>
+                    </div>
+                    <div class="download-feature">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Windows 10/11 compatible</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="logo.svg" alt="Trading Journal Logo" class="logo-icon">
+                        <span class="logo-text">Trading Journal</span>
+                    </div>
+                    <p class="footer-description">Professional trading analysis for serious traders.</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Product</h4>
+                        <a href="#features" class="footer-link">Features</a>
+                        <a href="#pricing" class="footer-link">Pricing</a>
+                        <a href="#download" class="footer-link">Download</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-title">Resources</h4>
+                        <a href="https://youtu.be/0CuHwpOpnO8" target="_blank" class="footer-link">Demo Video</a>
+                        <a href="https://github.com/ashishsingh1331/TradingJournal-releases" target="_blank" class="footer-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Trading Journal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
