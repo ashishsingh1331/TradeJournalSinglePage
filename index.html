@@ -3,15 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trading Journal v3.0.3 - Free Trading Journal for All Brokers on Windows</title>
-    <meta name="description" content="Trading Journal v3.0.3 is free for everyone. Works with all brokers on Windows—export holdings, convert to CSV, map fields once, and see broker-level insights in one dashboard.">
+    <title>Trading Journal — One Dashboard for All Your Brokers | Free on Windows</title>
+    <meta name="description" content="Stop switching between broker tabs. Trading Journal gives you a unified dashboard across all brokers on Windows — free, no signup. Export, map once, and see everything in one place.">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PRGQTPXGML"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-PRGQTPXGML');
     </script>
     <script type="text/javascript">
@@ -23,327 +22,363 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <!-- Navigation -->
-    <nav class="nav">
+    <nav class="nav" role="navigation">
         <div class="nav-container">
-            <div class="logo">
+            <a href="#" class="logo">
                 <img src="logo.svg" alt="Trading Journal Logo" class="logo-icon">
                 <span class="logo-text">Trading Journal</span>
-            </div>
+            </a>
             <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
             </button>
             <div class="nav-links">
+                <a href="#pain-points" class="nav-link">Why This</a>
                 <a href="#features" class="nav-link">Features</a>
-                <a href="#how-to-use" class="nav-link">How to Use</a>
-                <a href="#testimonials" class="nav-link">Contact</a>
-                <a href="#download" class="nav-link cta-nav">Download</a>
+                <a href="#how-to-use" class="nav-link">Get Started</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#download" class="nav-link cta-nav">Download Free</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section — Lead with the outcome, not the version -->
     <section class="hero">
-        <div class="hero-background">
-            <div class="grid-overlay"></div>
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
+        <div class="hero-bg">
+            <div class="hero-grain"></div>
+            <div class="hero-glow hero-glow--1"></div>
+            <div class="hero-glow hero-glow--2"></div>
+            <div class="hero-grid-lines"></div>
         </div>
+
         <div class="hero-content">
-            <div class="hero-badge fade-in">
-                <span class="badge-text">Version 3.0.3 • 100% Free • No Signup</span>
+            <div class="hero-eyebrow reveal">
+                <span class="eyebrow-dot"></span>
+                <span>v3.0.3 — Free &middot; No Signup &middot; Windows</span>
             </div>
-            <h1 class="hero-title fade-in-delay-1">
-                <span class="title-line">Version 3.0.3</span>
-                <span class="title-line accent">is Live and Free for Everyone</span>
+
+            <h1 class="hero-title reveal reveal--d1">
+                <span class="hero-title__line">All your brokers.</span>
+                <span class="hero-title__line hero-title__line--accent">One clear dashboard.</span>
             </h1>
-            <p class="hero-description fade-in-delay-2">
-                A simple, powerful trading journal that is completely free.
-                Works with all brokers on Windows.
-                Export your current holdings, convert to CSV, do a one-time field mapping,
-                and get a clear dashboard with broker-level analysis in one place.
+
+            <p class="hero-subtitle reveal reveal--d2">
+                Stop juggling tabs and spreadsheets. Import your holdings from any broker,
+                map fields once, and get a unified view with broker-level insights —
+                all on your machine, completely free.
             </p>
-            <div class="hero-actions fade-in-delay-3">
-                <a href="https://github.com/ashishsingh1331/TradingJournal-releases/releases/download/v3.0.3/Trading.Journal-3.0.3-installer.exe" class="btn btn-primary">
-                    <span>Download Free Version 3.0.3</span>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M10 3V17M10 17L4 11M10 17L16 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
+
+            <div class="hero-cta reveal reveal--d3">
+                <a href="https://github.com/ashishsingh1331/TradingJournal-releases/releases/download/v3.0.3/Trading.Journal-3.0.3-installer.exe" class="btn btn--primary btn--lg">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14m0 0l-6-6m6 6l6-6"/></svg>
+                    Download Free for Windows
                 </a>
-                <a href="#how-to-use" class="btn btn-secondary">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M7 5L13 10L7 15V5Z" fill="currentColor"/>
-                    </svg>
-                    <span>See How to Use</span>
+                <a href="#how-to-use" class="btn btn--ghost btn--lg">
+                    See How It Works
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
                 </a>
             </div>
-            <div class="hero-stats fade-in-delay-4">
-                <div class="stat-item">
-                    <div class="stat-number">100%</div>
-                    <div class="stat-label">Free Forever</div>
+
+            <div class="hero-proof reveal reveal--d4">
+                <div class="proof-item">
+                    <span class="proof-value">100%</span>
+                    <span class="proof-label">Free Forever</span>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number">All Brokers</div>
-                    <div class="stat-label">Unified View</div>
+                <div class="proof-divider"></div>
+                <div class="proof-item">
+                    <span class="proof-value">All Brokers</span>
+                    <span class="proof-label">One Place</span>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number">Windows</div>
-                    <div class="stat-label">Desktop Only</div>
+                <div class="proof-divider"></div>
+                <div class="proof-item">
+                    <span class="proof-value">Private</span>
+                    <span class="proof-label">Your Data, Your Machine</span>
                 </div>
             </div>
         </div>
+
+        <div class="hero-scroll-hint">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
+    <!-- Pain Points — "Sound Familiar?" -->
+    <section id="pain-points" class="pain-section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Powerful Features</h2>
-                <p class="section-subtitle">Everything you need to analyze and improve your trading</p>
+            <div class="pain-header">
+                <span class="section-tag reveal">The Problem</span>
+                <h2 class="section-heading reveal reveal--d1">Sound familiar?</h2>
+                <p class="section-lead reveal reveal--d2">
+                    If you trade across multiple brokers, you probably live with these daily frustrations.
+                </p>
             </div>
 
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🏦</div>
-                    <h3 class="feature-title">Supports All Brokers</h3>
-                    <p class="feature-description">Export holdings from any broker and bring everything together.</p>
+            <div class="pain-grid">
+                <div class="pain-card reveal">
+                    <div class="pain-card__number">01</div>
+                    <div class="pain-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/><path d="M6 8h.01M9 8h.01M12 8h.01"/></svg>
+                    </div>
+                    <h3 class="pain-card__title">Tab chaos every morning</h3>
+                    <p class="pain-card__text">You open 3-4 broker dashboards just to get a picture of where your money sits. Every. Single. Day.</p>
                 </div>
 
-                <div class="feature-card">
-                    <div class="feature-icon">🗺️</div>
-                    <h3 class="feature-title">No Manual Entry</h3>
-                    <p class="feature-description">Just a few quick mappings and you're done. No more repetitive typing.</p>
+                <div class="pain-card reveal">
+                    <div class="pain-card__number">02</div>
+                    <div class="pain-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M14.5 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V7.5L14.5 2z"/><path d="M14 2v6h6"/><path d="M8 13h8m-8 4h8m-8-8h2"/></svg>
+                    </div>
+                    <h3 class="pain-card__title">Spreadsheet hell</h3>
+                    <p class="pain-card__text">You manually copy-paste holdings into a spreadsheet, pray the formulas don't break, and still can't see the full picture.</p>
                 </div>
 
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3 class="feature-title">Broker-Level Analysis</h3>
-                    <p class="feature-description">See performance insights by broker in a single dashboard.</p>
+                <div class="pain-card reveal">
+                    <div class="pain-card__number">03</div>
+                    <div class="pain-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3 class="pain-card__title">No time for real analysis</h3>
+                    <p class="pain-card__text">By the time your data is "ready", you've lost the energy to actually analyze your trades and learn from them.</p>
                 </div>
 
-                <div class="feature-card">
-                    <div class="feature-icon">🧭</div>
-                    <h3 class="feature-title">One Place, Clear View</h3>
-                    <p class="feature-description">A clean, unified view of all your brokers in one place.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">📚</div>
-                    <h3 class="feature-title">Learning Journey</h3>
-                    <p class="feature-description">Capture your learning journey alongside trades to get better over time.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🪟</div>
-                    <h3 class="feature-title">Windows Only</h3>
-                    <p class="feature-description">Built for Windows users today.</p>
-                </div>
-
-
-
-                <div class="feature-card">
-                    <div class="feature-icon">💾</div>
-                    <h3 class="feature-title">Local Storage</h3>
-                    <p class="feature-description">All your data stays on your machine. Complete privacy and security with offline-first architecture.</p>
+                <div class="pain-card reveal">
+                    <div class="pain-card__number">04</div>
+                    <div class="pain-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                    </div>
+                    <h3 class="pain-card__title">Privacy worries</h3>
+                    <p class="pain-card__text">Online tools want your login, your data, your broker credentials. You just want a journal, not another security risk.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- How to Use Section -->
-    <section id="how-to-use" class="pricing">
+    <!-- Solution — The Shift -->
+    <section class="solution-section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">How to Use</h2>
-                <p class="section-subtitle">Get started in minutes with a one-time mapping</p>
-            </div>
-
-            <div class="video-embed">
-                <div class="video-frame">
-                    <iframe src="https://www.youtube.com/embed/zYRNbod-0H4" title="How to map fields and import holdings CSV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="solution-shift">
+                <div class="shift-before reveal">
+                    <span class="shift-label">Before</span>
+                    <p>Scattered data across brokers, manual spreadsheets, no clear insights, privacy concerns with cloud tools.</p>
                 </div>
-            </div>
-
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <div class="pricing-badge free">Step 1</div>
-                    <div class="pricing-header">
-                        <h3 class="pricing-name">Export Holdings</h3>
-                        <div class="pricing-price">
-                            <span class="price-amount">Your Broker</span>
-                            <span class="price-period">Current Holdings</span>
-                        </div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li class="feature-item">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span>Export your current holdings</span>
-                        </li>
-                        <li class="feature-item">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span>Convert the file to CSV</span>
-                        </li>
-                        <li class="feature-item">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span>Keep the CSV ready for import</span>
-                        </li>
-                    </ul>
-                    <a href="https://youtu.be/zYRNbod-0H4" target="_blank" class="btn btn-outline btn-block">Watch the Quick Guide</a>
+                <div class="shift-arrow reveal reveal--d1">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14m0 0l-6-6m6 6l-6 6"/></svg>
                 </div>
-
-                <div class="pricing-card featured">
-                    <div class="pricing-badge popular">Step 2</div>
-                    <div class="pricing-header">
-                        <h3 class="pricing-name">Map Fields</h3>
-                        <div class="pricing-price">
-                            <span class="price-amount">One Time</span>
-                            <span class="price-period">Inside the App</span>
-                        </div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li class="feature-item">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span>Import the CSV in the app</span>
-                        </li>
-                        <li class="feature-item">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span>Do a one-time field mapping</span>
-                        </li>
-                        <li class="feature-item">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span>Save mappings for next time</span>
-                        </li>
-                    </ul>
-                    <a href="#download" class="btn btn-primary btn-block">Download Version 3.0.3</a>
-                </div>
-
-                <div class="pricing-card">
-                    <div class="pricing-badge premium">Step 3</div>
-                    <div class="pricing-header">
-                        <h3 class="pricing-name">Explore Insights</h3>
-                        <div class="pricing-price">
-                            <span class="price-amount">Unified Dashboard</span>
-                            <span class="price-period">Broker-Level View</span>
-                        </div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li class="feature-item">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span>Clear view of all brokers in one place</span>
-                        </li>
-                        <li class="feature-item">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span>Broker-level analysis in the dashboard</span>
-                        </li>
-                        <li class="feature-item">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span>No manual entry after mapping</span>
-                        </li>
-                    </ul>
-                    <a href="#download" class="btn btn-outline btn-block">Get Version 3.0.3 Free</a>
+                <div class="shift-after reveal reveal--d2">
+                    <span class="shift-label shift-label--accent">After Trading Journal</span>
+                    <p>One import. One mapping. One unified dashboard. Private. Free. Done.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Forms Section -->
-    <section id="testimonials" class="testimonials">
+    <!-- Features — What Makes It Different -->
+    <section id="features" class="features-section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Need Something Custom?</h2>
-                <p class="section-subtitle">Tell us what you want and we will build it</p>
-            </div>
+            <span class="section-tag reveal">What You Get</span>
+            <h2 class="section-heading reveal reveal--d1">Built for how traders actually work</h2>
 
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p class="testimonial-text">Want a personalized version of Trading Journal for your workflow or broker?</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">⚡</div>
-                        <div class="author-info">
-                            <div class="author-name">Personalized App Development</div>
-                            <div class="author-source">Share your requirements</div>
+            <div class="features-layout">
+                <div class="feature-block feature-block--hero reveal">
+                    <div class="feature-block__badge">Core</div>
+                    <h3 class="feature-block__title">Unified dashboard across all brokers</h3>
+                    <p class="feature-block__desc">Import holdings from Zerodha, Groww, Angel One, Upstox — literally any broker. See everything in a single, clean dashboard without switching a single tab.</p>
+                    <div class="feature-block__visual">
+                        <div class="mock-dashboard">
+                            <div class="mock-bar">
+                                <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
+                            </div>
+                            <div class="mock-content">
+                                <div class="mock-row mock-row--header">
+                                    <span>Stock</span><span>Broker</span><span>Qty</span><span>P&L</span>
+                                </div>
+                                <div class="mock-row"><span>RELIANCE</span><span class="mock-tag mock-tag--1">Zerodha</span><span>50</span><span class="mock-green">+12.4%</span></div>
+                                <div class="mock-row"><span>INFY</span><span class="mock-tag mock-tag--2">Groww</span><span>120</span><span class="mock-green">+8.1%</span></div>
+                                <div class="mock-row"><span>TATA STEEL</span><span class="mock-tag mock-tag--3">Angel One</span><span>80</span><span class="mock-red">-3.2%</span></div>
+                                <div class="mock-row"><span>HDFC BANK</span><span class="mock-tag mock-tag--1">Zerodha</span><span>30</span><span class="mock-green">+5.7%</span></div>
+                            </div>
                         </div>
                     </div>
-                    <a href="https://forms.gle/F4kTZohppv6j1P46A" target="_blank" class="btn btn-outline btn-block">Request a Custom App</a>
                 </div>
 
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p class="testimonial-text">Found a bug or have an improvement idea? Help us make the next version better.</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">🛠️</div>
-                        <div class="author-info">
-                            <div class="author-name">Bug & Improvement</div>
-                            <div class="author-source">Quick feedback form</div>
+                <div class="features-grid-secondary">
+                    <div class="feature-tile reveal">
+                        <div class="feature-tile__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M14.5 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V7.5L14.5 2z"/><path d="M14 2v6h6"/><path d="M8 13h2m-2 4h2"/><path d="M16 13h-4m4 4h-4"/></svg>
                         </div>
+                        <h4 class="feature-tile__title">One-time field mapping</h4>
+                        <p class="feature-tile__desc">Map your broker's CSV columns once. Every future import reuses that mapping automatically — zero repetitive work.</p>
                     </div>
-                    <a href="https://forms.gle/XKdikk646LhdASib8" target="_blank" class="btn btn-primary btn-block">Report a Bug or Suggest</a>
+
+                    <div class="feature-tile reveal">
+                        <div class="feature-tile__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M21 12c0 1.2-4 6-9 6s-9-4.8-9-6c0-1.2 4-6 9-6s9 4.8 9 6z"/><circle cx="12" cy="12" r="3"/></svg>
+                        </div>
+                        <h4 class="feature-tile__title">Broker-level insights</h4>
+                        <p class="feature-tile__desc">See performance, exposure, and P&L broken down by broker. Understand which setups are actually working.</p>
+                    </div>
+
+                    <div class="feature-tile reveal">
+                        <div class="feature-tile__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M16 3h5v5M4 20L20.2 3.8"/><path d="M21 16v5h-5M15 15l6.1 6.1"/><path d="M4 4l5 5"/></svg>
+                        </div>
+                        <h4 class="feature-tile__title">Averaging & lot control</h4>
+                        <p class="feature-tile__desc">Create separate averaging trades and choose exactly which lot to sell. Crystal clear trade history.</p>
+                    </div>
+
+                    <div class="feature-tile reveal">
+                        <div class="feature-tile__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                        </div>
+                        <h4 class="feature-tile__title">Built-in learning journal</h4>
+                        <p class="feature-tile__desc">Capture lessons alongside every trade. Turn mistakes into edge and build a personal knowledge base over time.</p>
+                    </div>
+
+                    <div class="feature-tile reveal">
+                        <div class="feature-tile__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h4 class="feature-tile__title">Local-first & private</h4>
+                        <p class="feature-tile__desc">No cloud storage. No login. Your trade data is stored locally on your machine — never uploaded anywhere. Internet is only used for live prices.</p>
+                    </div>
+
+                    <div class="feature-tile reveal">
+                        <div class="feature-tile__icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+                        </div>
+                        <h4 class="feature-tile__title">Windows desktop app</h4>
+                        <p class="feature-tile__desc">A native Windows app that's fast and responsive. Needs internet for live price updates.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Download Section -->
-    <section id="download" class="download">
+    <!-- How to Use — 3 Steps + Video -->
+    <section id="how-to-use" class="steps-section">
+        <div class="container">
+            <span class="section-tag reveal">Get Started</span>
+            <h2 class="section-heading reveal reveal--d1">Up and running in 3 steps</h2>
+            <p class="section-lead reveal reveal--d2">No complicated setup. No account creation. Just download, import, and go.</p>
+
+            <div class="steps-video reveal">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/zYRNbod-0H4" title="How to use Trading Journal" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="steps-track">
+                <div class="step-card reveal">
+                    <div class="step-card__number">1</div>
+                    <div class="step-card__content">
+                        <h3>Export your holdings</h3>
+                        <p>Go to your broker (Zerodha, Groww, etc.), export your current holdings, and save as CSV.</p>
+                    </div>
+                </div>
+
+                <div class="step-connector">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14m0 0l-4-4m4 4l4-4"/></svg>
+                </div>
+
+                <div class="step-card reveal">
+                    <div class="step-card__number">2</div>
+                    <div class="step-card__content">
+                        <h3>Map fields once</h3>
+                        <p>Import the CSV into Trading Journal and do a one-time column mapping. It remembers this for all future imports.</p>
+                    </div>
+                </div>
+
+                <div class="step-connector">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14m0 0l-4-4m4 4l4-4"/></svg>
+                </div>
+
+                <div class="step-card reveal">
+                    <div class="step-card__number">3</div>
+                    <div class="step-card__content">
+                        <h3>See everything in one place</h3>
+                        <p>Your unified dashboard is ready — broker-level insights, P&L breakdowns, and a clean view of every holding.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CTA -->
+    <section id="download" class="download-section">
+        <div class="download-bg">
+            <div class="download-glow"></div>
+        </div>
         <div class="container">
             <div class="download-content">
-                <h2 class="download-title">Ready to Start?</h2>
-                <p class="download-description">Version 3.0.3 is live and totally free for everyone — no signup, no payment. Works with all brokers on Windows.</p>
+                <span class="section-tag section-tag--light reveal">Ready?</span>
+                <h2 class="download-heading reveal reveal--d1">Start organizing your<br>trades today</h2>
+                <p class="download-lead reveal reveal--d2">Version 3.0.3 is live — completely free, no signup, no strings attached.</p>
 
-                <div class="download-options">
-                    <a href="https://github.com/ashishsingh1331/TradingJournal-releases/releases/download/v3.0.3/Trading.Journal-3.0.3-installer.exe" class="download-card">
-                        <div class="download-icon">⬇️</div>
-                        <div class="download-info">
-                            <h3 class="download-version">Version 3.0.3</h3>
-                            <p class="download-details">100% Free • Windows • All Brokers</p>
-                        </div>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </a>
-                </div>
+                <a href="https://github.com/ashishsingh1331/TradingJournal-releases/releases/download/v3.0.3/Trading.Journal-3.0.3-installer.exe" class="download-btn reveal reveal--d3">
+                    <div class="download-btn__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14m0 0l-6-6m6 6l6-6"/></svg>
+                    </div>
+                    <div class="download-btn__text">
+                        <span class="download-btn__title">Download Trading Journal</span>
+                        <span class="download-btn__meta">v3.0.3 &middot; Windows &middot; Free</span>
+                    </div>
+                    <svg class="download-btn__arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14m0 0l-6-6m6 6l-6 6"/></svg>
+                </a>
 
-                <div class="download-features">
-                    <div class="download-feature">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <span>Works offline - your data stays private</span>
+                <div class="download-trust reveal reveal--d4">
+                    <div class="trust-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>
+                        Your data stays on your machine
                     </div>
-                    <div class="download-feature">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <span>Windows only</span>
+                    <div class="trust-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>
+                        Works with every broker
+                    </div>
+                    <div class="trust-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>
+                        No signup or payment
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Feedback -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <span class="section-tag reveal">Get in Touch</span>
+            <h2 class="section-heading reveal reveal--d1">Have feedback or need something custom?</h2>
+
+            <div class="contact-grid">
+                <a href="https://forms.gle/F4kTZohppv6j1P46A" target="_blank" class="contact-card reveal">
+                    <div class="contact-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <div class="contact-card__body">
+                        <h3>Request a custom app</h3>
+                        <p>Want a personalized version for your workflow or broker? Tell us what you need.</p>
+                    </div>
+                    <svg class="contact-card__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                </a>
+
+                <a href="https://forms.gle/XKdikk646LhdASib8" target="_blank" class="contact-card reveal">
+                    <div class="contact-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+                    </div>
+                    <div class="contact-card__body">
+                        <h3>Report a bug or suggest</h3>
+                        <p>Found something off or have an idea to make it better? We're listening.</p>
+                    </div>
+                    <svg class="contact-card__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                </a>
             </div>
         </div>
     </section>
@@ -351,31 +386,29 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-top">
                 <div class="footer-brand">
-                    <div class="logo">
+                    <a href="#" class="logo">
                         <img src="logo.svg" alt="Trading Journal Logo" class="logo-icon">
                         <span class="logo-text">Trading Journal</span>
-                    </div>
-                    <p class="footer-description">Professional trading analysis for serious traders.</p>
+                    </a>
+                    <p class="footer-tagline">One dashboard for all your brokers.</p>
                 </div>
-
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4 class="footer-title">Product</h4>
-                        <a href="#features" class="footer-link">Features</a>
-                        <a href="#download" class="footer-link">Download</a>
+                <div class="footer-nav">
+                    <div class="footer-col">
+                        <h4>Product</h4>
+                        <a href="#features">Features</a>
+                        <a href="#how-to-use">Get Started</a>
+                        <a href="#download">Download</a>
                     </div>
-
-                    <div class="footer-column">
-                        <h4 class="footer-title">Resources</h4>
-                        <a href="https://youtu.be/0CuHwpOpnO8" target="_blank" class="footer-link">Demo Video</a>
-                        <a href="https://github.com/ashishsingh1331/TradingJournal-releases" target="_blank" class="footer-link">GitHub</a>
-                        <a href="https://x.com/DrupalBaba" target="_blank" class="footer-link">Developer</a>
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <a href="https://youtu.be/zYRNbod-0H4" target="_blank">Demo Video</a>
+                        <a href="https://github.com/ashishsingh1331/TradingJournal-releases" target="_blank">GitHub</a>
+                        <a href="https://x.com/DrupalBaba" target="_blank">Developer</a>
                     </div>
                 </div>
             </div>
-
             <div class="footer-bottom">
                 <p>&copy; 2026 Trading Journal. All rights reserved.</p>
             </div>
